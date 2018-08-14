@@ -11,9 +11,8 @@ const codes = [
     "a"
   ];
 let index = 0;
-const main = document.querySelector('.main')
- 
-main.addEventListener('keydown', function(event){
+const main = document.body;
+function init () {main.addEventListener('keydown', function(event){
     const keyPress = event.key;
     if (keyPress === codes[index]){
         index++;
@@ -21,5 +20,4 @@ main.addEventListener('keydown', function(event){
             alert('Konami Code Done!');
             index = 0;
         }} else { index = 0;}
-  // alert(`${event.key} was clicked!`)
-})
+})}
